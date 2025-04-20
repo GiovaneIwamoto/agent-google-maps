@@ -18,6 +18,12 @@ This repository contains a collection of Jupyter notebooks and tools designed to
 
 ---
 
+### **REFERENCES**
+
+Please check the Wiki section of this GitHub repository for all related documentation, guides, and usage references. It contains detailed explanations, code examples, and development notes to help you get the most out of this project.
+
+---
+
 ### **AUTHOR**
 
 Giovane Hashinokuti Iwamoto - Computer Science - Brazil
