@@ -2,7 +2,10 @@
 
 ### **OVERVIEW**
 
-This repository contains a collection of Jupyter notebooks and tools designed to accelerate the development of AI agents using LangChain, LangGraph, and other related libraries. The project demonstrates various techniques for building, managing, and enhancing AI agents with memory, retrieval-augmented generation (RAG), streaming, and tool-calling capabilities.
+This repository contains a collection of Jupyter notebooks and tools designed to accelerate the development of AI agents using LangChain, LangGraph, and other related libraries. 
+
+> [!IMPORTANT]
+> The project demonstrates various techniques for building, managing, and enhancing AI agents with memory, retrieval-augmented generation, streaming, and tool-calling capabilities.
 
 ---
 
@@ -16,11 +19,8 @@ This repository contains a collection of Jupyter notebooks and tools designed to
 
 - `notebook/tool_calling.ipynb` Shows how to integrate external tools into the agent's workflow for enhanced functionality.
 
----
-
-### **REFERENCES**
-
-Please check the Wiki section of this GitHub repository for all related documentation, guides, and usage references. It contains detailed explanations, code examples, and development notes to help you get the most out of this project.
+> [!NOTE]
+> Please check the Wiki section of this GitHub repository for all related documentation, guides, and usage references. It contains detailed explanations, code examples, and development notes to help you get the most out of this project.
 
 ---
 
