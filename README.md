@@ -1,26 +1,42 @@
-# AGENT DEV ACCELERATOR
+# AGENT GOOGLE MAPS
 
 ### **OVERVIEW**
 
-This repository contains a collection of Jupyter notebooks and tools designed to accelerate the development of AI agents using LangChain, LangGraph, and other related libraries. 
+#### Langgraph
 
-> [!IMPORTANT]
-> The project demonstrates various techniques for building, managing, and enhancing AI agents with memory, retrieval-augmented generation, streaming, and tool-calling capabilities.
+- https://langchain-ai.github.io/langgraph/tutorials/get-started/1-build-basic-chatbot/
+- https://langchain-ai.github.io/langgraph/tutorials/get-started/2-add-tools/
+- https://langchain-ai.github.io/langgraph/tutorials/get-started/3-add-memory/
 
 ---
 
-### **FEATURES**
+#### Google Maps API
 
-- `notebook/agent_memory.ipynb` Demonstrates how to build a React-based agent with memory persistence using LangChain and LangGraph.
+**Google Text Search API** returns information about a set of places based on a string
 
-- `notebook/rag_embedding.ipynb` Implements RAG workflows with Pinecone vector stores and Ollama embeddings for efficient document retrieval and question answering.
+The service responds with a list of places matching the text string and any location bias that has been set.
 
-- `notebook/stream.ipynb` Provides an example of streaming responses from a language model for real-time interaction.
+https://developers.google.com/maps/documentation/places/web-service/text-search
 
-- `notebook/tool_calling.ipynb` Shows how to integrate external tools into the agent's workflow for enhanced functionality.
+Take a look at the `X-Goog-FieldMask header` allows to choose exactly which fields the API will return based on your query. In the example below, I selected:
 
-> [!NOTE]
-> Please check the Wiki section of this GitHub repository for all related documentation, guides, and usage references. It contains detailed explanations, code examples, and development notes to help you get the most out of this project.
+```py
+"X-Goog-FieldMask": places.id
+                    places.attributions 
+                    places.displayName
+                    places.formattedAddress
+                    places.location
+                    places.googleMapsLinks
+```
+
+Note that: `places.id` can be useful in your application to call other APIs, such as the one for embedding maps: 
+https://developers.google.com/maps/documentation/embed/embedding-map
+
+---
+
+Full documentation for the Google Maps Places API:
+
+https://developers.google.com/maps/documentation/places/web-service#features-for-places-api-new
 
 ---
 
